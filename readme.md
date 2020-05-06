@@ -6,7 +6,7 @@ During development of website in the Nette Framework, I found myself limited by 
 <br>That's why I decided I'll do a little addon for these flashes. It works basically the same, but I can set additional arguments which may come handy.
 
 ## Installation
-Run `composer require vottuscode/extendedflashes`
+Run `composer require vottuscode/extended-flashes`
 <br>Go to your BasePresenter.php and add the `Vottus\Flashes\Traits\Flashes` trait:
 ```php
 <?php declare(strict_types=1);

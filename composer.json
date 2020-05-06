@@ -1,7 +1,7 @@
 {
-    "name": "VottusCode/ExtendedFlashes",
+    "name": "vottuscode/extended-flashes",
     "description": "Allow your flash messages to contain more information!",
-    "type": "plugin",
+    "type": "library",
     "require": {
         "nette/nette": "^3.0",
         "nette/utils": "^3.1"
