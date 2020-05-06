@@ -1,0 +1,17 @@
+{
+    "name": "VottusCode/ExtendedFlashes",
+    "description": "Allow your flash messages to contain more information!",
+    "type": "plugin",
+    "require": {
+        "nette/nette": "^3.0",
+        "nette/utils": "^3.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "VottusCode",
+            "email": "vottus@vott.us"
+        }
+    ],
+    "minimum-stability": "stable"
+}
