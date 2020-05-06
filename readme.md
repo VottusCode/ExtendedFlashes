@@ -1,5 +1,8 @@
 ## Extended Flashes
+<img src="https://vottuscode.github.io/ExtendedFlashes/additional_fmessage.png">
+<br/>
 
+## About
 You may be asking, what is this? Glad you asked.
 
 During development of website in the Nette Framework, I found myself limited by the default Flash Messages, `$presenter->flashMessage($message, $type)`
@@ -70,7 +73,12 @@ Then add this below it:
 (the {varType} is not necessary, it's there for auto completion in IDEs)
 > :warning: Do not ever disable escaping, it will create an XSS vulnerability.
 
-And now the flash messages are handled by the JS method flash(), and it depends on you how you use it!
+Now the flash messages are handled by the JS method flash(), and it depends on you how you use it!
+
+You can for example use third-party libraries like SweetAlert or toastr.js for nice toast messages or alerts.
+
+<img src="https://vottuscode.github.io/ExtendedFlashes/js_fmessage.png">
+<br/>SweetAlert Example
 
 ## Examples
 
