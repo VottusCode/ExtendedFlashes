@@ -13,5 +13,10 @@
             "email": "vottus@vott.us"
         }
     ],
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
     "minimum-stability": "stable"
 }
