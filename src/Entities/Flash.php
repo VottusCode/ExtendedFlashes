@@ -19,7 +19,7 @@ class Flash
     public $message;
 
     /**
-     * @var string // Flash Type - swal or notify
+     * @var string // Flash Type
      */
     public $flashType;
 
@@ -31,13 +31,13 @@ class Flash
 
     /**
      * Flash constructor.
-     * @param string $title
-     * @param $message
-     * @param $flashType
-     * @param string $additional
+     * @param string|null $title // Flash Title
+     * @param $message // Flash Message
+     * @param string $flashType // Flash Type
+     * @param $additional // Additional Information
      * @throws JsonException
      */
-    public function __construct(string $title, $message, $flashType, $additional)
+    public function __construct(?string $title, $message, string $flashType, $additional)
     {
         $this->title = $title;
         $this->message = $message;
@@ -47,9 +47,9 @@ class Flash
 
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getTitle(): string
+    public function getTitle(): ?string
     {
         return $this->title;
     }

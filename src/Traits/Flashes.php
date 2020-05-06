@@ -8,15 +8,14 @@ trait Flashes
 {
 
     /**
-     * Sends flash message
-     * @param $title // flash title
-     * @param $message // flash content
-     * @param string $type // type of flash
-     * @param $additional // additional information (for ex. timer in swal)
-     * @return Flash // the flash
+     * @param string|null $title // Flash Title
+     * @param $message // Flash Content
+     * @param string $type // Flash Type
+     * @param mixed|null $additional // Additional information you may need
+     * @return Flash
      * @throws JsonException
      */
-    public function flash($title, $message, string $type, $additional): Flash
+    public function flash(?string $title, $message, string $type="info", $additional=null): Flash
     {
         $id = $this->getParameterId('flash');
         $messages = $this->getPresenter()->getFlashSession()->$id;
