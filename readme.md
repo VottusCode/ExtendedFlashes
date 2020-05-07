@@ -38,6 +38,33 @@ If you don't need to set the title, you can set it to null. Type is by default s
 Variable `$additional` is for additional info, as mentioned earlier. It is later transformed info a JSON using `Nette\Utils\Json::encode()`.
 You may use anything that can be converted into a Json, otherwise an `Nette\Utils\JsonException` is thrown.
 
+Example flash:
+```
+$this->flash("Hello", "This is a nice flash message!", "success", [
+    "happy" => true
+]);
+```
+The flashes are in the same $flashes variable, so you don't need to modify your flash messages.
+
+Example flash rendering with `flashMessage()`:
+```latte
+<div n:foreach="$flashes as $flash" class="flash {$flash->type}">
+	{$flash->message}
+</div>
+```
+
+Example flash rendering with `flash()`:
+```latte
+<div n:foreach="$flashes as $flash" class="flash {$flash->type}">
+	{$flash->message}
+	
+	// and you can add:
+	{var $json = json_decode($flash->additional}
+	{$json->additional_info}
+</div>
+```
+
+
 ## Using it with JavaScript
 Say what? You can use this with JS? Yes, and there are two ways to use it.
 You can use Nittro or Nette.ajax.js, but I'm gonna show you a solution without any libraries.
