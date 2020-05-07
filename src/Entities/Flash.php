@@ -37,6 +37,7 @@ class Flash
      * @param $additional // Additional Information
      * @throws JsonException
      */
+
     public function __construct(?string $title, $message, string $flashType, $additional)
     {
         $this->title = $title;
