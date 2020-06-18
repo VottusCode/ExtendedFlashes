@@ -43,10 +43,9 @@ class Flash
         $this->title = $title;
         $this->message = $message;
         $this->flashType = $flashType;
-        $this->additional = Json::encode($additional);
+        $this->additional = $additional;
     }
-
-
+    
     /**
      * @return string|null
      */
@@ -79,6 +78,15 @@ class Flash
         return $this->additional;
     }
 
+    /**
+     * @throws JsonException
+     * @return string|null
+     */
+    public function getAdditionalAsJson(): ?string
+    {
+        return Json::encode($additional);
+    }
+    
     /**
      * @param string $title
      */
