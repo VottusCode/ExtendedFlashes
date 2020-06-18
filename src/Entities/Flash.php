@@ -84,7 +84,7 @@ class Flash
      */
     public function getAdditionalAsJson(): ?string
     {
-        return Json::encode($additional);
+        return Json::encode($this->getAdditional());
     }
     
     /**
