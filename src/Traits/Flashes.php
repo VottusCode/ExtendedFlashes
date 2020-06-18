@@ -13,7 +13,6 @@ trait Flashes
      * @param string $type // Flash Type
      * @param mixed|null $additional // Additional information you may need
      * @return Flash
-     * @throws JsonException
      */
     public function flash(?string $title, $message, string $type="info", $additional=null): Flash
     {
