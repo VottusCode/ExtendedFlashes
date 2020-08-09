@@ -1,3 +1,6 @@
+## Announcement
+Version 2 of Extended Flashes is coming! Stay tuned!
+
 ## Extended Flashes
 <img src="https://vottuscode.github.io/ExtendedFlashes/additional_fmessage.png">
 <br/>
