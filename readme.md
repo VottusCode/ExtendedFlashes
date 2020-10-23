@@ -2,7 +2,7 @@
 Version 2 of Extended Flashes is coming! Stay tuned!
 
 ## Extended Flashes
-<img src="https://vottuscode.github.io/ExtendedFlashes/additional_fmessage.png">
+<img src="https://vottuscode.github.io/ExtendedFlashes/additional_fmessage.png" />
 <br/>
 
 ## About
@@ -107,7 +107,7 @@ Now the flash messages are handled by the JS method flash(), and it depends on y
 
 You can for example use third-party libraries like SweetAlert or toastr.js for nice toast messages or alerts.
 
-<img src="https://vottuscode.github.io/ExtendedFlashes/js_fmessage.png">
+<img src="https://vottuscode.github.io/ExtendedFlashes/js_fmessage.png" />
 <br/>SweetAlert Example
 
 ## Examples
