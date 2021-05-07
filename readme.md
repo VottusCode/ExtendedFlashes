@@ -1,5 +1,6 @@
-## Announcement
-Version 2 of Extended Flashes is coming! Stay tuned!
+## Deprecation Notice
+
+This project has been deprecated as Presenter#flashMessage now accepts Objects.
 
 ## Extended Flashes
 <img src="https://vottuscode.github.io/ExtendedFlashes/additional_fmessage.png" />
