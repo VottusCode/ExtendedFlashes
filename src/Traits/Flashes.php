@@ -16,11 +16,8 @@ trait Flashes
      */
     public function flash(?string $title, $message, string $type="info", $additional=null): Flash
     {
-        $id = $this->getParameterId('flash');
-        $messages = $this->getPresenter()->getFlashSession()->$id;
-        $messages[] = $flash = new Flash($title, $message, $type, $additional);
-        $this->getTemplate()->flashes = $messages;
-        $this->getPresenter()->getFlashSession()->$id = $messages;
+        $flash = new Flash($title, $message, $type, $additional);
+        $this->getPresenter()->flashMessage($flash);
         return $flash;
     }
 
